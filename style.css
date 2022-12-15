@@ -1,0 +1,361 @@
+/*-----------------HOME PAGE CSS----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*
+{ 
+    margin: 0; 
+    padding: 0;  
+    transition: 150ms; 
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    width: 100%; 
+    height: 100%; 
+    min-height: 100vh;
+    background: linear-gradient(135deg,#9f05ff69 10%, #fd5e086b 100%), 
+            url(uhd-gym-stock.jpeg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.container-fluid 
+{ 
+    width: 100%; 
+    height: 100%; 
+}
+.container
+{
+    width: 100%;
+    height: 150px; 
+    margin: auto; 
+    background: linear-gradient(to left, rgba(255,255,255,0.2)50%, 
+                rgba(255,255,255,0.2)50%); 
+}
+nav
+{ 
+    width: 100%; 
+    height: 100%; 
+    margin: auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.logo
+{
+    position: relative;
+    margin-left: 1%; 
+    margin-top: 0.5%; 
+}
+#logo-pic{
+    position: relative; 
+    width: 200px;
+    cursor: pointer;
+    transition: all 1s;
+}
+span
+{
+    color: darkred; 
+}
+ul.header
+{
+    list-style: none; 
+    display: flex; 
+    float: right; 
+    justify-content: center; 
+    align-items: center; 
+}
+ul.header li 
+{ 
+    cursor: pointer; 
+    margin-right: 30px; 
+    color: white; 
+    font-size: 20px; 
+    letter-spacing: 1px;
+}
+ul.header li a
+{
+    text-decoration: none; 
+    color: inherit; 
+}
+.header .active
+{
+    color: darkred; 
+}
+ul.header li:hover
+{
+    color: darkred; 
+}
+.btn
+{ 
+    background: darkred; 
+    color: white; 
+    font-size: 20px; 
+    padding: 10px 40px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    border: none; 
+    text-decoration: none; 
+}
+.content
+{
+    width:  1200px; 
+    height: 100%; 
+    margin: auto; 
+    text-align: center; 
+}
+.content h3
+{ 
+    color: white; 
+    padding-top: 250px; 
+    font-size: 30px; 
+}
+.content h1
+{ 
+    color: white; 
+    padding-top: 20px; 
+    font-size: 80px; 
+    padding-bottom: 30px; 
+}
+.content .btn
+{ 
+    font-size: 25px; 
+    margin-top: 25px; 
+}
+.content .btn:hover
+{
+    background: white; 
+    color: darkred; 
+}
+
+/*-----------MEMBERSHIP PAGE CSS-------------*/
+.member-content h2 
+{ 
+    color: white; 
+    font-size: 45px; 
+    padding: 80px 0; 
+    text-align: center; 
+
+}
+.member-content span
+{
+    color: red;
+}
+.price-row 
+{
+    width: 90%; 
+    max-width: 1100px; 
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 25px; 
+}
+.price-col
+{
+    background: indianred; 
+    padding: 10% 15%; 
+    border-radius: 10px; 
+    color: white; 
+    text-align: center; 
+}
+.price-col p  
+{
+    font-size: 22px; 
+    padding: 15px; 
+}
+.price-col h3  
+{
+    font-size: 44px; 
+    margin: 20px 0 40; 
+    font-weight: 500; 
+}
+.price-col h3 span
+{
+    font-size: 18px; 
+    color: white; 
+    margin: 20px 0 40; 
+    font-weight: 500; 
+}
+.price-col ul
+{
+    text-align: left; 
+    margin: 20px 0; 
+    color: antiquewhite; 
+    list-style: none;
+}
+.price-col ul li
+{
+    margin: 15px 0; 
+}
+.price-col ul li::before
+{
+    content: '\2022'; 
+    color: darkred; 
+    font-weight: bold; 
+    margin-right: 8px;
+}
+.price-col button 
+{
+    width: 100%; 
+    padding: 14px 0; 
+    background: darkred; 
+    color: white; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 6px; 
+    margin-top: 30px; 
+    cursor: pointer; 
+    transition: 0.5s; 
+}
+.price-col button:hover
+{
+    background: white; 
+    color: darkred;
+}
+
+/*-----------ABOUT PAGE CSS-------------*/
+.video-container {
+    position: relative; 
+    width: 100%; 
+    height: 500px; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
+    box-shadow: 0px 0px 10vw 2.5vw #BEBEBE; 
+}
+.video-container video 
+{
+    position: absolute;
+    min-width: 100%; 
+    object-position: center;
+    z-index: -1;
+}
+.about-content{
+    position: absolute;
+    z-index: 1;
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-content span
+{
+    color: red;
+}
+.about-content h1
+{ 
+    color: white; 
+    font-size: 60px; 
+    text-align: center;
+    padding: 10px; 
+}
+.about-content p
+{
+    color: white; 
+    font-size: 18px; 
+    text-align: center;  
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 50px;
+}
+.box-container 
+{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.box-container .price-col h3
+{
+    font-size: 28px; 
+    margin: 20px 0 40; 
+    font-weight: 500; 
+}
+.box-container .price-col p  
+{
+    font-size: 16px; 
+    padding: 15px; 
+}
+.icon
+{
+    font-size: 40px; 
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+}
+.about-hover:hover
+{
+    transform: scale(110%);
+}
+
+
+
+/*-----------CONTACT PAGE CSS-------------*/
+.contact-us
+{ 
+    width: 90%; 
+    margin: 50px auto; 
+}
+.contact-us h1
+{
+    margin-bottom: 10px; 
+    color: white; 
+}
+.contact-us p
+{
+    margin-bottom: 40px; 
+    color: white; 
+}
+.contact-us span
+{
+    color: red; 
+}
+form
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+.input-group
+{
+    margin-bottom: 30px; 
+    width: 50%; 
+    position: relative; 
+}
+input, textarea
+{
+    width: 100%; 
+    padding: 10px; 
+    outline: 0; 
+    border: 1px solid white; 
+    color: white; 
+    background: transparent; 
+    font-size: 15px; 
+}
+label
+{
+    height: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    padding: 10px; 
+    color: white; 
+    cursor: text; 
+    transition: 0.2s;
+}
+.contact-btn
+{
+    padding: 10px 0; 
+    color: white; 
+    outline: none; 
+    background: transparent;
+    border: 1px solid white; 
+    width: 50%; 
+    margin-left: 2%;
+    cursor: pointer; 
+}
+input:focus~label, 
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -35px; 
+    font-size: 14px;
+}
